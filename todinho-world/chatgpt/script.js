@@ -109,18 +109,18 @@ const text = copy[locale];
 
 const languages = {
   english: { ranking: "#1", label: ["Inglês", "English", "Inglés"], word: "all" },
-  mandarin: { ranking: "#2", label: ["Mandarim", "Mandarin", "Mandarín"], word: "大家" },
-  hindi: { ranking: "#3", label: ["Hindi", "Hindi", "Hindi"], word: "सभी" },
+  mandarin: { ranking: "#2", label: ["Mandarim", "Mandarin", "Mandarín"], word: "da jia" },
+  hindi: { ranking: "#3", label: ["Hindi", "Hindi", "Hindi"], word: "sabhi" },
   spanish: { ranking: "#4", label: ["Espanhol", "Spanish", "Español"], word: "todos" },
-  arabic: { ranking: "#5", label: ["Árabe", "Arabic", "Árabe"], word: "الجميع" },
+  arabic: { ranking: "#5", label: ["Árabe", "Arabic", "Árabe"], word: "al-jami" },
   french: { ranking: "#6", label: ["Francês", "French", "Francés"], word: "tous" },
   portuguese: { ranking: "#8", label: ["Português", "Portuguese", "Portugués"], word: "todos" },
-  russian: { ranking: "#9", label: ["Russo", "Russian", "Ruso"], word: "все" },
+  russian: { ranking: "#9", label: ["Russo", "Russian", "Ruso"], word: "vse" },
   german: { ranking: "#12", label: ["Alemão", "German", "Alemán"], word: "alle" },
-  japanese: { ranking: "#13", label: ["Japonês", "Japanese", "Japonés"], word: "みんな" },
+  japanese: { ranking: "#13", label: ["Japonês", "Japanese", "Japonés"], word: "minna" },
   italian: { ranking: "#29", label: ["Italiano", "Italian", "Italiano"], word: "tutti" },
   yoruba: { ranking: "~#35", label: ["Iorubá", "Yoruba", "Yoruba"], word: "gbogbo" },
-  greek: { ranking: "#86", label: ["Grego", "Greek", "Griego"], word: "όλοι" }
+  greek: { ranking: "#86", label: ["Grego", "Greek", "Griego"], word: "oloi" }
 };
 
 const countryRows = [
@@ -186,7 +186,7 @@ const stageData = [
   {
     total: countries.length,
     from: countries.map((item) => ({ id: item.id, match: item.languageId, label: item.country[localeIndex], kind: "language-country" })),
-    to: languageIds.map((id) => ({ id, label: `${languages[id].word} · ${labelLanguage(id)}`, kind: "word" }))
+    to: languageIds.map((id) => ({ id, label: languages[id].word, kind: "word" }))
   },
   {
     total: countries.length,

@@ -24,9 +24,7 @@ body {
 }
 
 body {
-  background:
-    radial-gradient(circle at top left, rgba(255, 125, 155, 0.14), transparent 28rem),
-    linear-gradient(135deg, #f8fbff 0%, #fff7fb 46%, #f3fbf1 100%);
+  background: linear-gradient(135deg, #f8fbff 0%, #f7fbff 48%, #f3fbf1 100%);
   color: var(--ink);
   font-family: ui-rounded, "Nunito", "Arial Rounded MT Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   overflow: hidden;
@@ -65,36 +63,6 @@ a {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.42;
   font-weight: 750;
-}
-
-.heart,
-.spark {
-  position: absolute;
-  font-weight: 900;
-  opacity: 0.9;
-}
-
-.heart {
-  color: #ff7f9b;
-  font-size: 1.35rem;
-}
-
-.heart-a {
-  left: 18%;
-  top: 26px;
-}
-
-.heart-b {
-  left: 20%;
-  top: 62px;
-}
-
-.spark {
-  right: 23%;
-  top: 56px;
-  color: #12263f;
-  font-size: 2rem;
-  transform: rotate(-20deg);
 }
 
 .game-shell {
