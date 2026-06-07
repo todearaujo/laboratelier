@@ -280,6 +280,12 @@ a {
   --option-bg: #f6fcff;
 }
 
+.word {
+  --option-border: #abd9f3;
+  --option-bg: #f6fcff;
+  font-style: italic;
+}
+
 .connection-layer {
   position: absolute;
   inset: 0;

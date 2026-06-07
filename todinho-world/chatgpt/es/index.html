@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/">
     <link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/">
     <link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/">
-    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="../styles.css?v=6">
   </head>
   <body>
     <main class="game-shell">
@@ -22,19 +22,19 @@
           <article class="stage-panel">
             <header class="stage-header">
               <p class="stage-kicker" data-i18n="stepOne">Etapa 1</p>
-              <h1 data-i18n="stageOneTitle">Conecta el Apodo con el País</h1>
-              <p data-i18n="stageOneSubtitle">¿Cómo sonarían apodos cariñosos en cada idioma?</p>
-              <div class="stage-count" id="countOne">0/15 conectados</div>
+              <h1 data-i18n="stageOneTitle">Conecta el Idioma con el Ranking</h1>
+              <p data-i18n="stageOneSubtitle">¿Sabes cuáles son los idiomas más hablados del mundo?</p>
+              <div class="stage-count" id="countOne">0/13 conectados</div>
             </header>
             <div class="match-board">
               <svg class="connection-layer" id="svgOne"></svg>
               <div class="match-column">
-                <h2 data-i18n="nicknames">Apodos</h2>
+                <h2 data-i18n="languages">Idiomas</h2>
                 <div class="option-stack" id="blockOneFrom"></div>
               </div>
               <div aria-hidden="true"></div>
               <div class="match-column">
-                <h2 data-i18n="languageCountry">Idioma + país</h2>
+                <h2 data-i18n="rankings">Rankings</h2>
                 <div class="option-stack" id="blockOneTo"></div>
               </div>
             </div>
@@ -43,27 +43,48 @@
           <article class="stage-panel" aria-hidden="true">
             <header class="stage-header">
               <p class="stage-kicker" data-i18n="stepTwo">Etapa 2</p>
-              <h1 data-i18n="stageTwoTitle">Conecta el Idioma con el Ranking</h1>
-              <p data-i18n="stageTwoSubtitle">¿Sabes cuáles son los idiomas más hablados del mundo?</p>
+              <h1 data-i18n="stageTwoTitle">Conecta el País con la Palabra</h1>
+              <p data-i18n="stageTwoSubtitle">¿Cómo se dice "todos" en cada idioma?</p>
               <div class="stage-count" id="countTwo">0/15 conectados</div>
             </header>
             <div class="match-board">
               <svg class="connection-layer" id="svgTwo"></svg>
               <div class="match-column">
-                <h2 data-i18n="languages">Idiomas</h2>
+                <h2 data-i18n="countries">Países</h2>
                 <div class="option-stack" id="blockTwoFrom"></div>
               </div>
               <div aria-hidden="true"></div>
               <div class="match-column">
-                <h2 data-i18n="rankings">Rankings</h2>
+                <h2 data-i18n="words">Palabras</h2>
                 <div class="option-stack" id="blockTwoTo"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="stage-panel" aria-hidden="true">
+            <header class="stage-header">
+              <p class="stage-kicker" data-i18n="stepThree">Etapa 3</p>
+              <h1 data-i18n="stageThreeTitle">Conecta el Apodo con el País</h1>
+              <p data-i18n="stageThreeSubtitle">¿Cómo sonarían apodos cariñosos en cada idioma?</p>
+              <div class="stage-count" id="countThree">0/15 conectados</div>
+            </header>
+            <div class="match-board">
+              <svg class="connection-layer" id="svgThree"></svg>
+              <div class="match-column">
+                <h2 data-i18n="nicknames">Apodos</h2>
+                <div class="option-stack" id="blockThreeFrom"></div>
+              </div>
+              <div aria-hidden="true"></div>
+              <div class="match-column">
+                <h2 data-i18n="countries">Países</h2>
+                <div class="option-stack" id="blockThreeTo"></div>
               </div>
             </div>
           </article>
 
           <article class="stage-panel final-panel" aria-hidden="true">
             <div class="final-copy">
-              <p class="stage-kicker" data-i18n="stepThree">Final</p>
+              <p class="stage-kicker" data-i18n="stepFinal">Final</p>
               <h1 data-i18n="finalTitle">Muchos apodos.<br>Un solo Tode.</h1>
               <p data-i18n="finalSubtitle">Conectaste 15 idiomas, culturas y países diferentes.</p>
               <button class="reset-link" type="button" id="resetButton" data-i18n="restart">Empezar de nuevo</button>
@@ -92,6 +113,6 @@
       </article>
     </div>
 
-    <script src="../script.js?v=7"></script>
+    <script src="../script.js?v=8"></script>
   </body>
 </html>
