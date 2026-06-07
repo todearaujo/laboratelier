@@ -100,6 +100,15 @@ a {
   text-align: center;
 }
 
+.brand-mark {
+  margin: 0 0 6px;
+  color: #10253f;
+  font-size: clamp(1.05rem, 3vw, 1.55rem);
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 950;
+}
+
 .stage-header h1 {
   margin: 0;
   color: #10253f;
@@ -365,6 +374,10 @@ a {
   gap: 18px;
   justify-items: center;
   width: min(100%, 760px);
+}
+
+.final-copy .brand-mark {
+  margin-bottom: 2px;
 }
 
 .final-copy h1 {
