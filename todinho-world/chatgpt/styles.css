@@ -101,15 +101,7 @@ a {
 }
 
 .stage-kicker {
-  margin: 0 0 7px;
-  padding: 5px 11px;
-  border-radius: 8px;
-  background: var(--lilac);
-  color: white;
-  font-size: clamp(0.72rem, 1.9vw, 0.86rem);
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 950;
+  display: none;
 }
 
 .stage-header h1 {
