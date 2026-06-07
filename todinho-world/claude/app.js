@@ -406,6 +406,8 @@
       else drawWire(n, src, tgt, 'ok', { animate: true });
       announce(stepDone(n) ? T.stepDone : T.aOk); track('ok', { step: n, key });
       if (n === 3) queueReveal(key);
+      // avança sozinho ao concluir o desafio (exceto o último); pequeno respiro p/ ver o ouro
+      else if (stepDone(n)) setTimeout(() => { if (state.step === n && stepDone(n)) goStep(n + 1); }, 850);
     } else {
       tgt.classList.add('wrong'); setTimeout(() => tgt.classList.remove('wrong'), 450);
       const tmp = drawWire(n, src, tgt, 'wrong', {}); setTimeout(() => tmp.remove(), 470);
