@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tode @ Around the World</title>
+    <meta
+      name="description"
+      content="An interactive artifact of linguistics, geography, and culture: connect nicknames, countries, and language rankings around the world."
+    >
+    <link rel="canonical" href="https://laboratelier.todearaujo.com/chatgpt/todinho-world/en/">
+    <link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/chatgpt/todinho-world/">
+    <link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/chatgpt/todinho-world/">
+    <link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/chatgpt/todinho-world/en/">
+    <link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/chatgpt/todinho-world/es/">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="app" id="app">
+      <header class="hero">
+        <span class="heart heart-a">♥</span>
+        <span class="heart heart-b">♥</span>
+        <span class="spark">↝</span>
+        <nav class="language-switcher" aria-label="Language">
+          <a href="../" hreflang="pt-BR" lang="pt-BR">🇧🇷 Brasileiro</a>
+          <a href="./" hreflang="en-US" lang="en-US" aria-current="page">🇺🇸 English</a>
+          <a href="../es/" hreflang="es-ES" lang="es-ES">🇪🇸 Español</a>
+        </nav>
+        <h1 data-i18n="title">TODE @<br>AROUND THE WORLD 🌎</h1>
+        <p data-i18n="subtitle">What would a sweet nickname for Tode sound like in other languages?</p>
+        <div class="progress-shell" aria-live="polite">
+          <span id="progressText">0/15 connected</span>
+          <span class="progress-dots" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </span>
+        </div>
+      </header>
+
+      <section class="board" aria-label="Connection game" data-i18n-aria-label="boardLabel">
+        <article class="block" id="blockNickCountry" data-block="nick-country">
+          <div class="badge" data-i18n="blockOne">Block 1</div>
+          <h2 data-i18n="blockOnePrompt">Connect the nickname to the country</h2>
+          <div class="columns">
+            <div class="column">
+              <h3 data-i18n="nicknames">Nicknames</h3>
+              <div class="stack" id="nicknameList"></div>
+            </div>
+            <div class="connector" aria-hidden="true">
+              <svg id="svgNickCountry"></svg>
+            </div>
+            <div class="column">
+              <h3 data-i18n="countries">Countries</h3>
+              <div class="stack" id="countryListOne"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="block" id="blockCountryRank" data-block="country-rank">
+          <div class="badge badge-blue" data-i18n="blockTwo">Block 2</div>
+          <h2 data-i18n="blockTwoPrompt">Connect the country to the language ranking</h2>
+          <div class="columns">
+            <div class="column">
+              <h3 data-i18n="countries">Countries</h3>
+              <div class="stack" id="countryListTwo"></div>
+            </div>
+            <div class="connector" aria-hidden="true">
+              <svg id="svgCountryRank"></svg>
+            </div>
+            <div class="column">
+              <h3 data-i18n="languageRanking">Language Ranking</h3>
+              <div class="stack" id="rankList"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="feedback" aria-live="polite">
+        <article class="notice" id="errorNotice" hidden>
+          <div class="notice-icon">×</div>
+          <div>
+            <strong data-i18n="wrongConnection">Oops! Wrong connection.</strong>
+            <p id="errorText" data-i18n="tryAgain">Try connecting again.</p>
+          </div>
+        </article>
+
+        <article class="discovery" id="discoveryCard" hidden>
+          <p class="complete-label" data-i18n="chainComplete">Chain complete! ✨</p>
+          <div class="discovery-card">
+            <h2 id="cardCountry">🇯🇵 Japan</h2>
+            <dl>
+              <div><dt data-i18n="nicknameLabel">Nickname:</dt><dd id="cardNickname"></dd></div>
+              <div><dt data-i18n="languageLabel">Language:</dt><dd id="cardLanguage"></dd></div>
+              <div><dt data-i18n="rankingLabel">Ranking:</dt><dd id="cardRanking"></dd></div>
+              <div><dt data-i18n="speakersLabel">Speakers:</dt><dd id="cardSpeakers"></dd></div>
+              <div><dt data-i18n="shareLabel">Global share:</dt><dd id="cardShare"></dd></div>
+            </dl>
+            <p class="curiosity"><strong data-i18n="curiosityLabel">Curiosity:</strong> <span id="cardCuriosity"></span></p>
+            <button class="continue" type="button" id="continueButton">
+              <span data-i18n="continue">Keep connecting!</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="final" id="finalScreen" hidden>
+          <h2 data-i18n="finalTitle">Many nicknames.<br>One Tode.</h2>
+          <p data-i18n="finalSubtitle">You connected 15 different languages, cultures, and countries.</p>
+          <strong data-i18n="finalLine">Same name. Many worlds.</strong>
+          <button class="continue" type="button" id="resetButton">
+            <span data-i18n="restart">Start again</span>
+            <span>↺</span>
+          </button>
+        </article>
+
+        <aside class="rules">
+          <span>💡</span>
+          <p data-i18n-html="rules"><strong>Rules:</strong> first connect the nickname to the country. Then connect the country to the language ranking. If you miss in Block 2, that chain goes back to the start.</p>
+        </aside>
+      </section>
+
+      <footer data-i18n="footer">🌎 Many nicknames. One Tode. ♥</footer>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
