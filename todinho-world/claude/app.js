@@ -257,7 +257,6 @@
     h1.appendChild(document.createTextNode('Todinho ')); const at = el('span', 'at'); at.textContent = '@'; h1.appendChild(at);
     h1.appendChild(document.createTextNode(' ')); const g = el('span', 'globe'); g.textContent = '🌍'; h1.appendChild(g);
     head.appendChild(h1);
-    head.appendChild(txt(T.subtitle, 'subtitle'));
     stepper = el('div', 'stepper', { role: 'list' });
     for (let i = 1; i <= 3; i++) {
       const pill = el('div', 'sp', { role: 'listitem' }); pill.dataset.step = String(i);
