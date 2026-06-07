@@ -29,4 +29,32 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/claude/todinho-world/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/claude/todinho-world/"/>
   </url>
+  <url>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/chatgpt/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/"/>
+  </url>
+  <url>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/"/>
+  </url>
+  <url>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/"/>
+  </url>
+  <url>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/chatgpt/"/>
+  </url>
 </urlset>
