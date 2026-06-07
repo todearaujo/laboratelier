@@ -156,6 +156,10 @@ const els = {
 
 const text = copy[locale];
 
+function activeButtons(selector) {
+  return [...document.querySelectorAll(selector)].filter((node) => !node.disabled);
+}
+
 function labelLanguage(id) {
   return languages[id].label[localeIndex];
 }
@@ -236,6 +240,8 @@ function renderOptions() {
 }
 
 function choose(button) {
+  if (button.disabled) return;
+
   if (button.dataset.block === "two" && state.blockOne.size < data.length) {
     showToast(text.locked);
     return;
@@ -302,14 +308,29 @@ function connectBlockTwo(fromId, toId) {
     }
     return;
   }
+  clearChain(fromId);
   flashPair("two", fromId, toId);
   showToast(text.tryAgain);
+  update();
+  window.setTimeout(() => goToStage(0), 420);
 }
 
 function markDone(block, id) {
   document.querySelectorAll(`[data-block="${block}"][data-id="${CSS.escape(id)}"]`).forEach((node) => {
     node.classList.add("done");
+    node.disabled = true;
   });
+}
+
+function clearChain(id) {
+  state.blockOne.delete(id);
+  state.blockTwo.delete(id);
+  document.querySelectorAll(`[data-id="${CSS.escape(id)}"]`).forEach((node) => {
+    node.classList.remove("done", "selected", "error");
+    node.disabled = false;
+    node.setAttribute("aria-pressed", "false");
+  });
+  clearSelected();
 }
 
 function update() {
@@ -325,13 +346,20 @@ function goToStage(index) {
   setStageTransform();
   document.querySelectorAll(".stage-panel").forEach((panel, panelIndex) => {
     panel.toggleAttribute("aria-hidden", panelIndex !== index);
+    panel.inert = panelIndex !== index;
   });
   window.setTimeout(() => {
     drawConnections("one");
     drawConnections("two");
-    const first = document.querySelector(index === 1 ? '[data-block="two"][data-side="from"]:not(.done)' : ".reset-link");
+    const first = getStageFocusTarget(index);
     first?.focus();
   }, 580);
+}
+
+function getStageFocusTarget(index) {
+  if (index === 0) return activeButtons('[data-block="one"][data-side="from"]:not(.done)')[0];
+  if (index === 1) return activeButtons('[data-block="two"][data-side="from"]:not(.done)')[0];
+  return document.querySelector(".reset-link");
 }
 
 function setStageTransform() {
@@ -455,4 +483,8 @@ window.addEventListener("resize", () => requestAnimationFrame(() => {
 translateStatic();
 setPanelSizes();
 renderOptions();
+document.querySelectorAll(".stage-panel").forEach((panel, panelIndex) => {
+  panel.toggleAttribute("aria-hidden", panelIndex !== 0);
+  panel.inert = panelIndex !== 0;
+});
 update();
