@@ -322,6 +322,11 @@ main { display: block; }
 }
 .chip.is-rank.done .rank-num { color: var(--gold); }
 
+/* chip de palavra ("Todos" no idioma) — centralizado, com leve destaque */
+.chip.is-word { justify-content: center; }
+.col-right .chip.is-word { flex-direction: row; text-align: center; justify-content: center; }
+.chip.is-word .txt { font-weight: 600; font-size: 1.02rem; }
+
 /* nó/âncora (ponto-estrela na borda interna) */
 .node {
   position: absolute;

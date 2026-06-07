@@ -2,32 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://laboratelier.todearaujo.com/claude/todinho-world/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/claude/todinho-world/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/claude/todinho-world/en/"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/claude/todinho-world/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/claude/todinho-world/"/>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/</loc>
   </url>
   <url>
-    <loc>https://laboratelier.todearaujo.com/claude/todinho-world/pt-br/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/claude/todinho-world/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/claude/todinho-world/en/"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/claude/todinho-world/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/claude/todinho-world/"/>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/claude/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/claude/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/claude/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/claude/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/claude/"/>
   </url>
   <url>
-    <loc>https://laboratelier.todearaujo.com/claude/todinho-world/en/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/claude/todinho-world/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/claude/todinho-world/en/"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/claude/todinho-world/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/claude/todinho-world/"/>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/claude/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/claude/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/claude/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/claude/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/claude/"/>
   </url>
   <url>
-    <loc>https://laboratelier.todearaujo.com/claude/todinho-world/es/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/claude/todinho-world/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/claude/todinho-world/en/"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/claude/todinho-world/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/claude/todinho-world/"/>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/claude/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/claude/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/claude/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/claude/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/claude/"/>
+  </url>
+  <url>
+    <loc>https://laboratelier.todearaujo.com/todinho-world/claude/es/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://laboratelier.todearaujo.com/todinho-world/claude/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://laboratelier.todearaujo.com/todinho-world/claude/en/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://laboratelier.todearaujo.com/todinho-world/claude/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laboratelier.todearaujo.com/todinho-world/claude/"/>
   </url>
   <url>
     <loc>https://laboratelier.todearaujo.com/todinho-world/chatgpt/</loc>
